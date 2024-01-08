@@ -43,3 +43,6 @@ sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 #do
 #	[ -n "$(grep "upx" "$a")" ] && sed -i "/upx/d" "$a"
 #done
+
+# Custom configuration
+cp -r $GITHUB_WORKSPACE/ImmortalWrt/files/* $GITHUB_WORKSPACE/ImmortalWrt/build_dir/target-*/mt76/ImmortalWrt/etc/config/
