@@ -145,10 +145,10 @@ jobs:
         echo "  WR30U-112m-sha256: $(grep ".*112m.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
         echo "  WR30U-stock-md5: $(md5sum ${{ env.FIRMWARE }}/*stock*sysupgrade.bin | cut -d" " -f1)" >> release.txt
         echo "  WR30U-stock-sha256: $(grep ".*stock.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
-        echo "  cmcc_rax3000m-md5: $(md5sum ${{ env.FIRMWARE }}/*rax3000m*sysupgrade.bin | cut -d" " -f1)" >> release.txt
-        echo "  cmcc_rax3000m-sha256: $(grep ".*rax3000m.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
-        echo "  h3c_nx30pro-md5: $(md5sum ${{ env.FIRMWARE }}/*nx30pro*sysupgrade.bin | cut -d" " -f1)" >> release.txt
-        echo "  h3c_nx30pro-sha256: $(grep ".*nx30pro.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
+        echo "  CMCC_rax3000m-md5: $(md5sum ${{ env.FIRMWARE }}/*rax3000m*sysupgrade.bin | cut -d" " -f1)" >> release.txt
+        echo "  CMCC_rax3000m-sha256: $(grep ".*rax3000m.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
+        echo "  H3C_nx30pro-md5: $(md5sum ${{ env.FIRMWARE }}/*nx30pro*sysupgrade.bin | cut -d" " -f1)" >> release.txt
+        echo "  H3C_nx30pro-sha256: $(grep ".*nx30pro.*sysupgrade.bin" ${{ env.FIRMWARE }}/sha256sums | grep -oE "\w{64}")" >> release.txt
         h3c_nx30pro
         echo "status=success" >> $GITHUB_OUTPUT
 
