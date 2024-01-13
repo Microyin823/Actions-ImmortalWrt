@@ -39,7 +39,7 @@ config wifi-iface 'default_MT7981_1_2'
 	option device 'MT7981_1_2'
 	option network 'lan'
 	option mode 'ap'
-	option ssid 'AX3000-5G'
+	option ssid 'AX3000_5G'
 	option encryption 'psk-mixed'
 	option key '88888888'
 
