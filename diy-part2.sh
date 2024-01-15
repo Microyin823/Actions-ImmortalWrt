@@ -14,6 +14,9 @@
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
 
+#修正连接数
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
+
 # remove v2ray-geodata package from feeds (openwrt-22.03 & master)
 rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/sbwml/v2ray-geodata feeds/packages/net/v2ray-geodata
