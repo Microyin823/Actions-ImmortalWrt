@@ -16,7 +16,7 @@ on:
 permissions:
   contents: write
   schedule:
-    - cron: 00 13 15 * *  
+    - cron: 00 13 1 * *  
 
 env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
