@@ -221,7 +221,7 @@ config socks 'mgU2HDbD'
 	option autoswitch_restore_switch '1'
 
 config nodes 'seEboQ0d'
-	option remarks '自动切换'
+	option remarks 'Auto Switch'
 	option type 'Socks'
 	option address '127.0.0.1'
 	option port '10808'
