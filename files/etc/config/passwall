@@ -52,7 +52,6 @@ config global_rules
 	option geosite_update '0'
 	option geoip_update '0'
 	list gfwlist_url 'https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt'
-	list gfwlist_url 'https://tvbox.microyin.eu.org/customize.list'
 	list chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	list chnroute_url 'https://fastly.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china.txt'
 	list chnroute6_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
